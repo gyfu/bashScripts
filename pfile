@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Filename: "
 read name
-touch $name
-echo "Höfundur: Huginn Þór Jóhannsson" >> $name
-vim $name
+file="$name.py"
+touch $file 
+echo "#Höfundur: Huginn Þór Jóhannsson" >> $file
+vim $file
